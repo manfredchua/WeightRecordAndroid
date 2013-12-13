@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#b0000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_position"
+        android:layout_width="320dip"
+        android:layout_height="320dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/popup"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/popup_title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical"
+            android:text="@string/pupo_title"
+            android:textColor="#00bff3"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider_greyline"
+            android:contentDescription="@string/photo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.squad22.fit.wheelview.WheelView
+                android:id="@+id/year"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content" />
+
+            <com.squad22.fit.wheelview.WheelView
+                android:id="@+id/month"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content" />
+
+            <com.squad22.fit.wheelview.WheelView
+                android:id="@+id/day"
+                android:layout_width="101dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="120dip"
+                android:layout_height="45dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center"
+                android:text="@string/comfirm" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="120dip"
+                android:layout_height="45dip"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

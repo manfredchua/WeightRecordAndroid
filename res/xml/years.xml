@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE countries SYSTEM "../../dtd/countries.dtd">
+<!--
+  * locale/en_US/countries.xml
+  *
+  * Copyright (c) 2000-2010 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localized list of countries.
+  *
+  * $Id$
+  -->
+<years>
+	<year name="1" code="Jan"/>
+	<year name="2" code="Feb"/>
+	<year name="3" code="Mar"/>
+	<year name="4" code="Apr"/>
+	<year name="5" code="May"/>
+	<year name="6" code="Jun"/>
+	<year name="7" code="Jul"/>
+	<year name="8" code="Aug"/>
+	<year name="9" code="Sep"/>
+	<year name="10" code="Oct"/>
+	<year name="11" code="Nov"/>
+	<year name="12" code="Dec"/>
+</years>

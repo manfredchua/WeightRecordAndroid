@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+<items>
+		<item>
+			<code>101</code>
+			<msg>应用程序接受到无凭证</msg>
+		</item>
+		<item>
+			<code>102</code>
+			<msg>服务器中无法找到此应用程序的验证ID</msg>
+		</item>
+		<item>
+			<code>103</code>
+			<msg>所需要的操作是由于意外的错误而失败。如果使用最新的SDK不应该抛出。</msg>
+		</item>
+		<item>
+			<code>201</code>
+			<msg>无法连接网络</msg>
+		</item>
+		<item>
+			<code>202</code>
+			<msg>无法解析服务器的相应</msg>
+		</item>
+		<item>
+			<code>203</code>
+			<msg>权限不足</msg>
+		</item>
+		<item>
+			<code>301</code>
+			<msg>令牌无效</msg>
+		</item>
+		<item>
+			<code>302</code>
+			<msg>无法验证用户</msg>
+		</item>
+		<item>
+			<code>303</code>
+			<msg>无法获取文件列表</msg>
+		</item>
+		<item>
+			<code>304</code>
+			<msg>无效的密码格式。密码必须是4-50组成的ASCII字符。</msg>
+		</item>
+		<item>
+			<code>305</code>
+			<msg>邮箱地址无效</msg>
+		</item>
+		<item>
+			<code>306</code>
+			<msg>密码验证失败</msg>
+		</item>
+		<item>
+			<code>307</code>
+			<msg>无效的用户名格式。用户名必须是5-50个字母数字字符 - 第一个字符必须是字母</msg>
+		</item>
+		<item>
+			<code>308</code>
+			<msg>无效的电话格式。电话号码必须是数字7至20个数字，它可以用“+”开头</msg>
+		</item>
+		<item>
+			<code>309</code>
+			<msg>无法验证帐户。请确保所提供的验证码是正确的</msg>
+		</item>
+		<item>
+			<code>310</code>
+			<msg>无效的显示名称格式。在显示名称长度为4-50个字符（不是字节），并允许多字节输入。</msg>
+		</item>
+		<item>
+			<code>311</code>
+			<msg>用户的电子邮件无法更新在服务器上</msg>
+		</item>
+		<item>
+			<code>312</code>
+			<msg>用户电话号码无法更新在服务器上</msg>
+		</item>
+		<item>
+			<code>313</code>
+			<msg>电子邮件地址无效格式或电话号码的格式。</msg>
+		</item>
+		<item>
+			<code>314</code>
+			<msg>请求无法进行，社交网络的相关密匙无效</msg>
+		</item>
+		<item>
+			<code>315</code>
+			<msg>无效的国家代码。</msg>
+		</item>
+		<item>
+			<code>316</code>
+			<msg>无效的本地电话格式。该电话号码的数字，并且必须至少为7位数字</msg>
+		</item>
+		<item>
+		    <code>400</code>
+		    <msg>用户未找到或提供了一个错误的密码</msg>
+		</item>
+		<item>
+			<code>401</code>
+			<msg>删除文件失败</msg>
+		</item>
+		<item>
+			<code>402</code>
+			<msg>更新文件失败</msg>
+		</item>
+		<item>
+			<code>403</code>
+			<msg>无法上传本地文件，请检查本地目录是否有效</msg>
+		</item>
+		<item>
+			<code>404</code>
+			<msg>无法销毁文件</msg>
+		</item>
+		<item>
+			<code>405</code>
+			<msg>无法执行操作，必须先设置有效容器</msg>
+		</item>
+		<item>
+		    <code>409</code>
+		    <msg>用户名或邮箱已经存在</msg>
+		</item>
+		<item>
+		<code>501</code>
+		<msg>Invalid objects passed to method. Must be already saved on server</msg>
+		</item>
+		<item>
+		<code>502</code>
+		<msg>Unable to parse object. Must be JSON-encodable</msg>
+		</item>
+		<item>
+		<code>503</code>
+		<msg>Duplicate entry exists</msg>
+		</item>
+		<item>
+		<code>504</code>
+		<msg>Invalid remote path set for KiiFile. Must be of form: /root/path/subpath</msg>
+		</item>
+		<item>
+		<code>505</code>
+		<msg>Unable to delete object from cloud</msg>
+		</item>
+		<item>
+		<code>506</code>
+		<msg>Invalid KiiObject type – the type does not match the regex [A-Za-z]{1}[A-Za-z0-9-_]{4,49}</msg>
+		</item>
+		<item>
+		<code>507</code>
+		<msg>Unable to set an object as a child of itself</msg>
+		</item>
+		<item>
+		<code>508</code>
+		<msg>The key of the object being set is being used by the system. Please use a different key</msg>
+		</item>
+		<item>
+		<code>509</code>
+		<msg>The container you are trying to operate on does not exist</msg>
+		</item>
+		<item>
+		<code>510</code>
+		<msg>The object you are trying to operate on does not exist on the server</msg>
+		</item>
+		<item>
+		<code>511</code>
+		<msg>The URI provided is invalid</msg>
+		</item>
+		<item>
+		<code>512</code>
+		<msg>The object you are saving is older than what is on the server. Use one of the KiiObject#save:forced: methods to forcibly override data on the server</msg>
+		</item>
+		<item>
+		<code>513</code>
+		<msg>The group name provided is not valid. Ensure it is alphanumeric and more than 0 characters in length</msg>
+		</item>
+		<item>
+		<code>514</code>
+		<msg>At least one of the ACL entries saved to an object failed. Please note there may also have been one or more successful entries</msg>
+		</item>
+		<item>
+		<code>601</code>
+		<msg>No more query results exist</msg>
+		</item>
+		<item>
+		<code>602</code>
+		<msg>Query limit set too high</msg>
+		</item>
+		<item>
+		<code>603</code>
+		<msg>Query clauses is empty. Make sure “OR” and/or “AND” clauses have at least one correct sub-clauses</msg>
+		</item>
+		<item>
+		<code>701</code>
+		<msg>Push installation error. Installation already exist</msg>
+		</item>
+		<item>
+		<code>702</code>
+		<msg>Push subscription already exists</msg>
+		</item>
+		<item>
+		<code>703</code>
+		<msg>Push subscription does not exist</msg>
+		</item>
+		<item>
+		<code>704</code>
+		<msg>Topic is already exist</msg>
+		</item>
+		<item>
+		<code>705</code>
+		<msg>Topic does not exist</msg>
+		</item>
+		<item>
+		<code>706</code>
+		<msg>Invalid push message data</msg>
+		</item>
+		<item>
+		<code>707</code>
+		<msg>APNS field is required</msg>
+		</item>
+		<item>
+		<code>708</code>
+		<msg>Push data is required</msg>
+		</item>
+		<item>
+		<code>709</code>
+		<msg>Device token is not set</msg>
+		</item>
+		<item>
+		<code>710</code>
+		<msg>Push installation does not exist</msg>
+		</item>
+		<item>
+		<code>711</code>
+		<msg>Topic ID is invalid. Topic ID must be alphanumeric character and between 1-64 length</msg>
+		</item>
+		<item>
+		<code>801</code>
+		<msg>Resumable transfer object has already transferred completely</msg>
+		</item>
+		<item>
+		<code>802</code>
+		<msg>File has been modified during transfer</msg>
+		</item>
+		<item>
+		<code>803</code>
+		<msg>File path is invalid, can not get the file attribute</msg>
+		</item>
+		<item>
+		<code>804</code>
+		<msg>File does not exist</msg>
+		</item>
+		<item>
+		<code>805</code>
+		<msg>File path is a directory</msg>
+		</item>
+		<item>
+		<code>806</code>
+		<msg>File size is 0 byte</msg>
+		</item>
+		<item>
+		<code>807</code>
+		<msg>Invalid transfer state, transfer is already suspended</msg>
+		</item>
+		<item>
+		<code>808</code>
+		<msg>Invalid transfer state, transfer is already terminated</msg>
+		</item>
+		<item>
+		<code>809</code>
+		<msg>Transfer was suspended</msg>
+		</item>
+		<item>
+		<code>810</code>
+		<msg>Transfer was terminated</msg>
+		</item>
+		<item>
+		<code>811</code>
+		<msg>Transfer has already started</msg>
+		</item>
+		<item>
+		<code>812</code>
+		<msg>Object body integrity not assured. ClientHash must be same during transfer.</msg>
+		</item>
+		<item>
+		<code>813</code>
+		<msg>Object body range not satisfiable. Please try to transfer using another task.</msg>
+		</item>
+		<item>
+		<code>814</code>
+		<msg>File path is not writable.</msg>
+		</item>
+		<item>
+		<code>815</code>
+		<msg>Invalid destination file, file range is not assured</msg>
+		</item>
+</items>
+</page>

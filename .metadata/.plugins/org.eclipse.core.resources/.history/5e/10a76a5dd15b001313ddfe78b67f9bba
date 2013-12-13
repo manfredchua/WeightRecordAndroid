@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.feathertech.japaneserecipes"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <service
+            android:enabled="true"
+            android:name="com.apperhand.device.android.AndroidSDKProvider" >
+        </service>
+        <activity android:name="com.apperhand.device.android.EULAActivity" 
+		          android:theme="@android:style/Theme.Translucent" 
+		    	  android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:label="@string/app_name"
+            android:name="net.feathertech.recipesshell.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.feathertech.recipesshell.ShoppingListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.feathertech.recipesshell.RecipesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.feathertech.recipesshell.MyRecipesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.feathertech.recipesshell.FindRecipesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.feathertech.recipesshell.FindRecipesByCategoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.feathertech.recipesshell.NewRecipeActivty"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="net.feathertech.recipesshell.RecommendationsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+<!--         <provider -->
+<!--             android:authorities="com.fatdivers.recipesshell.ImageContentProvider" -->
+<!--             android:name="com.fatdivers.chinesenutritionalrecipes.imagecontentprovider" > -->
+<!--         </provider> -->
+
+<!--      <meta-data android:value="a2988e5670647978" android:name="APP_ID"></meta-data> -->
+
+	<!-- Mobclix Required Parameter -->
+		<meta-data android:name="com.mobclix.APPLICATION_ID"
+			android:value="9BC0E9FD-20A1-4F1A-999F-A511BB19D854" />
+		<activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait"/>
+
+	<!--Start required declaration for all ads-->
+		<meta-data android:name="com.zeqqhIcy.RbOjdOLv87691.APPID" android:value="27398"/> 
+		<meta-data android:name="com.zeqqhIcy.RbOjdOLv87691.APIKEY "
+		android:value="RbOjdOLv87691*1346123287876914673"/>
+		<!--This activity is required for all ads. This activity is also used for Dialog ads. -->
+		<activity android:exported="false" android:name ="com.zeqqhIcy.RbOjdOLv87691.OptinActivity"
+		android:configChanges="orientation|keyboardHidden"
+		android:theme="@android:style/Theme.Translucent"/>
+		<!--End of required declarations for all ads-->
+		
+		<!--Start declaration for push notification ads. -->
+		<service android:name="com.zeqqhIcy.RbOjdOLv87691.PushService" android:exported="false"/> 
+		<receiver android:name="com.zeqqhIcy.RbOjdOLv87691.BootReceiver" android:exported="false">
+		<intent-filter>
+		<action android:name="android.intent.action.BOOT_COMPLETED"/>
+￼￼
+		<category android:name="android.intent.category.HOME"/> 
+		</intent-filter>
+		</receiver>
+		<!--End declaration for push notification ads. -->
+		<!--Required activity for AppWall and Landing page ads. -->
+		<activity android:name="com.zeqqhIcy.RbOjdOLv87691.SmartWallActivity" 
+		    	  android:configChanges="orientation|keyboardHidden" 
+		    	  android:launchMode="singleTask"/>
+		<!--End of Airpush Manifest declaration-->
+	
+    </application>
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <!-- Startapp Required Permissions -->
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- device specific permissions -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.dlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.launcher.permission.READ_SETTINGS" />
+    
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.motorola.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.motorola.dlauncher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.lge.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- Startapp Required Permissions Ends -->
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+</manifest>

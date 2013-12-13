@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="320dip"
+            android:background="@drawable/default_photo_grey_background"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="15dip" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_measurement1"
+                        android:layout_width="240dip"
+                        android:layout_height="300dip"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:paddingLeft="15dip"
+                        android:scaleType="centerCrop"
+                        android:src="#c4c4c4" />
+
+                    <ImageView
+                        android:id="@+id/iv_camera1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:src="@drawable/silhouette" />
+
+                    <ImageView
+                        android:id="@+id/iv_hide_photo1"
+                        android:layout_width="240dip"
+                        android:layout_height="match_parent"
+                        android:alpha="100"
+                        android:contentDescription="@null"
+                        android:src="@color/transparent_background"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_measurement2"
+                        android:layout_width="240dip"
+                        android:layout_height="300dip"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:paddingLeft="15dip"
+                        android:scaleType="centerCrop"
+                        android:src="#c4c4c4" />
+
+                    <ImageView
+                        android:id="@+id/iv_camera2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:src="@drawable/silhouette" />
+
+                    <ImageView
+                        android:id="@+id/iv_hide_photo2"
+                        android:layout_width="240dip"
+                        android:layout_height="match_parent"
+                        android:alpha="100"
+                        android:contentDescription="@null"
+                        android:src="@color/transparent_background"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_measurement3"
+                        android:layout_width="240dip"
+                        android:layout_height="300dip"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="15dip"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="#c4c4c4" />
+
+                    <ImageView
+                        android:id="@+id/iv_camera3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@null"
+                        android:src="@drawable/silhouette" />
+
+                    <ImageView
+                        android:id="@+id/iv_hide_photo3"
+                        android:layout_width="240dip"
+                        android:layout_height="match_parent"
+                        android:alpha="100"
+                        android:contentDescription="@null"
+                        android:src="@color/transparent_background"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_weight"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/weight"
+                    android:textColor="#c4c4c4" />
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_weight"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_body_fat"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_body_fat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/new_body_fat"
+                    android:textColor="#c4c4c4"  />
+
+                <EditText
+                    android:id="@+id/et_body_fat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_body_fat"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_visceral_fat"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_lean_musde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/new_lean_musde" 
+                    android:textColor="#c4c4c4" />
+
+                <EditText
+                    android:id="@+id/et_lean_musde"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_lean_musde"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lean_musde"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_visceral_fat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/visceral_fat" 
+                    android:textColor="#c4c4c4" />
+
+                <EditText
+                    android:id="@+id/et_visceral_fat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_visceral_fat"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_body_age"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_body_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/body_age"
+                    android:textColor="#c4c4c4"  />
+
+                <EditText
+                    android:id="@+id/et_body_age"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_body_age"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#e2e2e2"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/rl_bmi"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_bmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bmi" />
+
+                <TextView
+                    android:id="@+id/et_bmi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_bmi"
+                    android:gravity="right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bmr"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_bmr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bmr" />
+
+                <TextView
+                    android:id="@+id/et_bmr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_bmr"
+                    android:gravity="right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_new_kcal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_new_kcal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/new_kcal"  />
+
+                <TextView
+                    android:id="@+id/et_new_kcal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_new_kcal"
+                    android:gravity="right" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_arm"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_arm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/arm" 
+                    android:textColor="#c4c4c4" />
+
+                <EditText
+                    android:id="@+id/et_arm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_arm"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_waistline"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_waistline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/waistline"
+                    android:textColor="#c4c4c4"  />
+
+                <EditText
+                    android:id="@+id/et_waistline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_waistline"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_abdominal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_abdominal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/abdominal" 
+                    android:textColor="#c4c4c4" />
+
+                <EditText
+                    android:id="@+id/et_abdominal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_abdominal"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_hips"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_hips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/hips" 
+                    android:textColor="#c4c4c4" />
+
+                <EditText
+                    android:id="@+id/et_hips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_hips"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_right_thigh"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_right_thigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/right_thigh" 
+                    android:textColor="#c4c4c4" />
+
+                <EditText
+                    android:id="@+id/et_right_thigh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_right_thigh"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <RelativeLayout
+                android:id="@+id/rl_right_calf"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+                <TextView
+                    android:id="@+id/txt_right_calf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/right_calf" 
+                    android:textColor="#c4c4c4" />
+
+                <EditText
+                    android:id="@+id/et_right_calf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_right_calf"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="10dip"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/remark"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider_greyline"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

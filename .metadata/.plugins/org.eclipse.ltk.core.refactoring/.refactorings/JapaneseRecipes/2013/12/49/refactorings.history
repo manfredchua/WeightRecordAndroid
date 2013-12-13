@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;JapaneseRecipes&apos;&#x0A;- Original project: &apos;JapaneseRecipes&apos;&#x0A;- Original elements:&#x0A;     AirpushSDK.jar&#x0A;     com-zeqqhIcy-RbOjdOLv87691.jar&#x0A;     SearchHelperService-1.0.16.1-jar-with-dependencies.jar&#x0A;     smartmad-sdk-android.jar" description="Delete elements" element1="libs/AirpushSDK.jar" element2="libs/SearchHelperService-1.0.16.1-jar-with-dependencies.jar" element3="libs/smartmad-sdk-android.jar" element4="libs/com-zeqqhIcy-RbOjdOLv87691.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="4" stamp="1386043526973" subPackages="false" version="1.0"/>
+</session>

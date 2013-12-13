@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <!--  <item
+        android:icon="@drawable/social_share"
+        android:orderInCategory="100"
+        android:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_wx_share"
+                android:icon="@drawable/wechat_selected"
+                android:orderInCategory="1"
+                android:showAsAction="always"
+                android:title="@string/menu_share"/>
+        </menu>
+    </item>--> 
+    
+    <item
+        android:icon="@drawable/ic_action_overflow_whit"
+        android:orderInCategory="100"
+        android:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_edit"
+                android:icon="@drawable/content_edit"
+                android:orderInCategory="1"
+                android:showAsAction="always"
+                android:title="@string/menu_edit"/>
+            <item
+                android:id="@+id/action_del"
+                android:icon="@drawable/content_discard"
+                android:orderInCategory="2"
+                android:showAsAction="always"
+                android:title="@string/menu_delete"/>
+        </menu>
+    </item>
+
+</menu>

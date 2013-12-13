@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">22fit</string>
+    <string name="photo">Photo</string>
+
+    <!-- 用户信息 -->
+    <string name="profile_title">完善资料</string>
+    <string name="name">姓名</string>
+    <string name="birthday">生日</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="action_comfirm">确认</string>
+    <string name="add_photo">添加图片</string>
+    <string name="pupo_title">选择生日</string>
+    <string name="comfirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="done">完成</string>
+    <string name="save">保存</string>
+    <string name="name_error">请输入姓名</string>
+    <string name="birthday_error">请选择生日</string>
+    <string name="height_error">请输入身高</string>
+    <string name="weight_error">请输入体重</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="save_failure">保存失败</string>
+    <string name="verify_email">验证邮箱</string>
+    <string name="verify_message">请查收你的邮件并进行邮箱验证。（注：QQ邮箱用户请查询垃圾邮箱）</string>
+    <string name="return_login">返回登录</string>
+    <string name="send_email">重发邮件</string>
+    <string name="send_success">发送成功</string>
+     <string name="send_failure">发送失败</string>
+     <string name="reset_success">重设密码成功</string>
+     <string name="reset_failure">重设密码失败</string>
+
+    <!-- 用户详情 -->
+    <string name="target_weight">目标体重&#058;</string>
+    <string name="current_weight">现在体重&#058;</string>
+    <string name="menu_edit">编辑</string>
+    <string name="menu_account">账户</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_share">分享</string>
+
+    <!-- 账户 -->
+    <string name="backup_records">现在备份</string>
+    <string name="automatic">自动备份</string>
+    <string name="wifi">WIFI</string>
+    <string name="wifi_3g">WIFI &#043; 3G</string>
+    <string name="email">电子邮箱</string>
+    <string name="reset_password">重设密码</string>
+    <string name="member">会员</string>
+    <string name="end_time">终止时间</string>
+    <string name="free_date">免费备份终止日期为</string>
+    <string name="not_purchase">未购买</string>
+    <string name="purchase_3_month">购买3个月会员</string>
+    <string name="purchase_6_month">6个月的会员</string>
+    <string name="purchase_1_year">1年的会员</string>
+    <string name="money_54">&#165;54</string>
+    <string name="money_90">&#165;90</string>
+    <string name="money_180">&#165;180</string>
+    <string name="name_or_email">用户名或邮箱</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="sign_out">退出登录</string>
+    <string name="register">注册</string>
+    <string name="new_account">注册新用户</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="nick_name">用户名(必须是英文字母或数字)</string>
+    <string name="password_lenght">密码长度必须6位以上 </string>
+    <string name="user_email">邮箱</string>
+    <string name="email_error">请输入格式正确的邮箱</string>
+    <string name="password_error">请输入密码,密码长度大于6位字符</string>
+    <string name="nick_name__error">请输入用户名,用户名长度大于4位字符</string>
+    <string name="register_name_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="forget_pwd_msg">在这里输入你的电子邮件，我们会向您发送一封电子邮件重设密码。</string>
+    <string name="send">发送</string>
+    <string name="old_pwd">当前密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="comfirm_pwd">确认密码</string>
+    <string name="confirm_password_error">输入确认密码必须和新密码保持一致</string>
+    <string name="register_success">注册成功，你将接收到一封邮箱，需要点击链接进行验证。</string>
+    <string name="register_failure">注册失败</string>
+    <string name="download_data">正下载数据&#046; &#046; &#046;</string>
+    <string name="login_failure">登录失败</string>
+    <string name="not_network">无网络, 请设置网络</string>
+    <string name="syncing">请耐心点,正在同步&#046; &#046; &#046;</string>
+    <string name="more_photos">更多图片&#062;&#062;</string>
+    <string name="metric_height">米</string>
+    <string name="metric_weight">公斤</string>
+    <string name="imperial_height">英寸</string>
+    <string name="imperial_weight">磅</string>
+    <string name="poor">尚差</string>
+
+    <!-- 设置 -->
+    <string name="remind">提醒</string>
+    <string name="units">Units</string>
+    <string name="metric">Metric&#040;kg,m&#041;</string>
+    <string name="imperial">Imperial&#040;lb,ft&#041;</string>
+    <string name="social_networking">社交网络</string>
+    <string name="sina">新浪微博</string>
+    <string name="wechat">微信</string>
+    <string name="renren">人人网</string>
+    <string name="binding">绑定</string>
+
+    <!-- 测量标准 -->
+    <string name="measure">测量标准</string>
+    <string name="standard_weight">标准体重&#040;公斤&#041;</string>
+    <string name="unit_standard_weight">标准体重&#040;磅&#041;</string>
+    <string name="body_fat">身体体脂率&#040;&#037;&#041;</string>
+    <string name="lean_musde">全身肌肉率&#040;&#037;&#041;</string>
+    <string name="body_age">身体年龄</string>
+    <string name="visceral_fat">内脏脂肪指数</string>
+    <string name="bmi">BMI</string>
+    <string name="bmr">基础代谢&#040;BMR&#041;</string>
+    <string name="kcal">每日热量需求&#040;kcal&#041;</string>
+    <string name="measure_title">记录体重和其他的测量</string>
+
+    <!-- 食物记录 -->
+    <string name="types_food">食物</string>
+    <string name="time">时间</string>
+    <string name="share">分享到</string>
+    <string name="add_meal">添加食物</string>
+    <string name="remark">备注</string>
+    <string name="food_title">饮食记录</string>
+    <string name="search_hint">搜索食物</string>
+    <string name="search_label">搜索</string>
+    <string name="food_name">烹调方式&#043;食物名称</string>
+    <string name="portion">份量</string>
+    <string name="number">数量</string>
+    <string name="food_kcal">卡路里</string>
+    <string name="type">类别</string>
+    <string name="food_name_error">输入食物名称</string>
+    <string name="number_error">输入数量</string>
+    <string name="kcal_error">输入卡路里</string>
+    <string name="type_error">选择类别</string>
+    <string name="image_error">选择照片或进行拍照</string>
+    <string name="title_error">输入标题</string>
+    <string name="remark_error">输入备注</string>
+    <string name="settlement">饮食结算</string>
+    <string name="meat">-肉类</string>
+    <string name="kcal_detail">大卡</string>
+    <string name="protein">蛋白质</string>
+    <string name="no_meat">-非肉类</string>
+    <string name="vegetable">蔬菜</string>
+    <string name="staple">主食</string>
+    <string name="fist">拳头</string>
+    <string name="palm">掌心</string>
+
+    <!-- 运动记录 -->
+    <string name="title">笔记&#046; &#046; &#046;</string>
+    <string name="exercise">运动</string>
+    <string name="add_exercise">添加运动</string>
+    <string name="activity_search_hint">输入运动</string>
+    <string name="activity_time">输入时间</string>
+    <string name="exercise_time">运动时间</string>
+    <string name="activity_kcal">消耗的卡路里</string>
+
+    <!-- 新测量 -->
+    <string name="new_body_fat">体脂率&#040;&#037;&#041;</string>
+    <string name="new_lean_musde">肌肉率&#040;&#037;&#041;</string>
+    <string name="new_bmr">BMR</string>
+    <string name="new_kcal">每天只需的热量</string>
+    <string name="abdominal">腹围&#040;公分&#041;</string>
+    <string name="arm">右上臂围&#040;公分&#041;</string>
+    <string name="waistline">腰围&#040;公分&#041;</string>
+    <string name="hips">臀围&#040;公分&#041;</string>
+    <string name="right_thigh">右大腿围&#040;公分&#041;</string>
+    <string name="right_calf">右小腿围&#040;公分&#041;</string>
+    <string name="measurement_value">测量值</string>
+
+    <!-- 记录 -->
+    <string name="more_record">浏览更多记录</string>
+    <string name="not_record">今天无记录</string>
+    <string name="not_summary">今天无总结</string>
+    <string name="view_summary">浏览今日总结</string>
+
+    <!-- 睡眠记录 -->
+    <string name="get_up">起床</string>
+    <string name="minute">分钟</string>
+    <string name="hour">小时</string>
+    <string name="sleep_desc">你已睡眠</string>
+
+    <!-- 喝水和排泄 -->
+    <string name="drink_water">喝了一杯水</string>
+    <string name="excrete">排泄一次</string>
+
+    <!-- 今天总结 -->
+    <string name="summary_food_record">饮食记录&#040;次&#041;</string>
+    <string name="summary_food_kcal">吃的卡路里</string>
+    <string name="summary_activity_record">运动&#040;分钟&#041;</string>
+    <string name="summary_activity_kcal">消耗的卡路里</string>
+    <string name="summary_water_record">喝水&#040;杯&#041;</string>
+    <string name="summary_bolwe_kcal">排泄&#040;次&#041;</string>
+    <string name="summary_sleep_record">睡眠&#040;小时&#041;</string>
+
+    <!-- 提示框 -->
+    <string name="alert_title">丢弃更改</string>
+    <string name="alert_msg">确定你要丢弃所以的更改?</string>
+    <string name="alert_discard">丢弃</string>
+
+    <!-- 更多 -->
+    <string name="more">更多</string>
+    <string name="traget_measurement">我的目标测量</string>
+    <string name="serving_reference">份量参考</string>
+    <string name="follow_us">关注我们</string>
+    <string name="disclaimer_note">免责说明</string>
+
+</resources>

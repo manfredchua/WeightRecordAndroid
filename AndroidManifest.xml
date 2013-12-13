@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.squad22.fit"
+    android:versionCode="5"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/customtitlebar" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.CompleteProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.AccountActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ForgetPasswordActivity" />
+        <activity android:name=".activity.ResetPasswordActivity" />
+        <activity
+            android:name=".activity.RecordExerciseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RecordMealActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RecordMeasurementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RecordSleepActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name=".activity.SearchFoodActivity" 
+            android:configChanges="keyboard">
+            <action android:name="android.intent.action.SEARCH" />
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".activity.SearchFoodActivity" />
+
+        <activity android:name=".activity.AddFoodEntryActivity" >
+        </activity>
+        <activity android:name=".activity.MealDetailActivity" >
+        </activity>
+        <activity android:name=".activity.FeedRecordCalendar" >
+        </activity>
+        <activity android:name=".activity.MeasurementDetailActivity" >
+        </activity>
+        <activity android:name=".activity.SearchExerciseActivity" >
+        </activity>
+        <activity android:name=".activity.ExerciseDetailActivity" >
+        </activity>
+        <activity
+            android:name=".activity.PhotoActivity"
+            android:theme="@style/Transparent" >
+        </activity>
+        <activity android:name=".activity.PhotoListActivity" >
+        </activity>
+        <activity android:name=".activity.SummaryDetailActivity" >
+        </activity>
+        <activity
+            android:name=".activity.EditMealActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.EditExerciseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.EditMeasurementActivity" >
+        </activity>
+        <activity android:name=".activity.TargetMeasurementActivity" >
+        </activity>
+        <activity android:name=".activity.FoodTypeActivity" >
+        </activity>
+        <activity android:name=".activity.ServingReferenceActivity" >
+        </activity>
+        <activity android:name=".activity.FollowUsActivity" >
+        </activity>
+        <activity android:name=".activity.DisclaimerNoteActivity" >
+        </activity>
+
+        <provider
+            android:name=".provider.ActivityProvider"
+            android:authorities="com.squad22.fit.provider.activity" />
+        <provider
+            android:name=".provider.MyActivityProvider"
+            android:authorities="com.squad22.fit.provider.myactivity" />
+        <provider
+            android:name=".provider.ActivityDetailProvider"
+            android:authorities="com.squad22.fit.provider.activitydetail" />
+        <provider
+            android:name=".provider.BowelCountProvider"
+            android:authorities="com.squad22.fit.provider.bowelcount" />
+        <provider
+            android:name=".provider.FoodProvider"
+            android:authorities="com.squad22.fit.provider.food" />
+        <provider
+            android:name=".provider.MealDetailProvider"
+            android:authorities="com.squad22.fit.provider.mealdetail" />
+        <provider
+            android:name=".provider.MealProvider"
+            android:authorities="com.squad22.fit.provider.meal" />
+        <provider
+            android:name=".provider.MeasurementProvider"
+            android:authorities="com.squad22.fit.provider.measurement" />
+        <provider
+            android:name=".provider.ProfileProvider"
+            android:authorities="com.squad22.fit.provider.profile" />
+        <provider
+            android:name=".provider.SleepProvider"
+            android:authorities="com.squad22.fit.provider.sleep" />
+        <provider
+            android:name=".provider.WaterCountProvider"
+            android:authorities="com.squad22.fit.provider.watercount" />
+        <provider
+            android:name=".provider.MyRecordProvider"
+            android:authorities="com.squad22.fit.provider.myrecords" />
+        <provider
+            android:name=".provider.SummaryProvider"
+            android:authorities="com.squad22.fit.provider.summary" />
+        <provider
+            android:name=".provider.UnitsProvider"
+            android:authorities="com.squad22.fit.provider.units" />
+    </application>
+
+</manifest>

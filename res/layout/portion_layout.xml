@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_position"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/popup"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_fist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="2dip"
+                android:layout_toLeftOf="@+id/iv_line"
+                android:background="@color/bule"
+                android:gravity="center"
+                android:text="@string/fist"
+                android:textColor="#000" />
+
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dividing_line_vertical"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/txt_palm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="2dip"
+                android:layout_toRightOf="@+id/iv_line"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="@string/palm"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider_greyline"
+            android:contentDescription="@null" />
+
+        <com.squad22.fit.wheelview.WheelView
+            android:id="@+id/wv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/divider_greyline"
+            android:contentDescription="@null" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/comfirm" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="recommendations">Recommendations</string>
+	<string name="app_name">Low Carb Recipes</string>
+	<string name="flip_recipes">Reference Recipes</string>
+	<string name="my_recipes">My Recipes</string>
+	<string name="find_recipes">Find Recipes</string>
+	<string name="shopping_list">Shopping List</string>
+	<string name="clear_bought_items">Clear Bought Items</string>
+	<string name="recipes">Recipes</string>
+	<string name="instructions">Instructions</string>
+	<string name="show_cover">Show Cover</string>
+	<string name="your_recipes">My Recipes</string>
+	<string name="favorite_recipes">Favorite Recipes</string>
+	<string name="no_custom_recipes_yet">No custom recipes yet</string>
+	<string name="no_favorited_recipes_yet">No favorited recipes yet</string>
+	<string name="select_the_category">Select the category</string>
+	<string name="all_recipes">All Recipes</string>
+	<string name="toast_add_to_shoppinglist">Added to Shopping List</string>
+	<string name="toast_add_to_favorites">Added to Favorite list</string>
+	<string name="title">Title...</string>
+	<string name="ingredients">Ingredients</string>
+	<string name="editing_user_added">Editing user added</string>
+	<string name="cancel">Cancel</string>
+	<string name="save">Save</string>
+	<string name="toast_alreay_a_favoite">Already in Favorite list</string>
+	<string name="edit">Edit</string>
+	<string name="toast_duplicate_name">Duplicate name</string>
+	<string name="done">Done</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="delete_favorite_confirmation">Do you want to delete recipe from Favorite list?</string>
+	<string name="delete_user_recipe_confirmation">Do you want to delete this recipe?</string>
+	<string name="also_liked">Those who like this also like ...</string>
+	<string name="toast_valid_name">Please enter Recipe name</string>
+	<string name="email">Send email</string>
+	<string name="email_subject">(name) from Low Carb Recipes</string>
+	<string name="sina_unable_to_connect">Unable to connect to Weibo</string>
+	<string name="sina_post_success">Successfully posted on Weibo</string>
+	<string name="sina_post_failure">Posted on Weibo failed!</string>
+	<string name="posting_to_sina">Posting to Weibo ...</string>
+	<string name="sina_url">http://mobile.fatdivers.com/low-carb-recipes</string>
+	<string name="startapp_devid">987550921</string>
+    <string name="startapp_appid">525885582</string>
+</resources>

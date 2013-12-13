@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="320dip"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_food_name"
+                android:layout_width="240dip"
+                android:layout_height="45dip"
+                android:background="@null"
+               	android:paddingLeft="15dip"
+                android:singleLine="true"
+                android:hint="@string/food_name_error"
+                android:nextFocusDown="@+id/et_number"
+                />
+
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dividing_line_vertical"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:paddingLeft="15dip"
+                android:background="@null"
+                android:hint="@string/number_error"
+                android:inputType="number"
+                android:imeOptions="actionDone" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider_greyline"
+            android:contentDescription="@null" />
+
+        <ListView
+            android:id="@+id/lv_food"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@null"
+            android:divider="@drawable/divider_greyline" >
+        </ListView>
+        
+        <ListView
+            android:id="@+id/lv_number"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@null"
+            android:divider="@drawable/divider_greyline"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
